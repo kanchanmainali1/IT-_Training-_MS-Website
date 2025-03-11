@@ -1,7 +1,7 @@
 // src/pages/CourseDetail.jsx
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import DemoBooking from '../components/DemoBooking';
+import DemoBooking from '../../components/DemoBooking';
 
 const courseDetailsData = {
   '1': {

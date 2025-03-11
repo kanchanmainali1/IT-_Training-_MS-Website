@@ -1,6 +1,6 @@
 // src/pages/Blog.jsx
 import React from 'react';
-import BlogCard from '../components/BlogCard';
+import BlogCard from '../../components/BlogCard';
 
 const blogPosts = [
   {

@@ -1,8 +1,8 @@
 // src/pages/CoursePage.jsx
 import React, { useState } from 'react';
-import CourseCard from '../components/CourseCard';
-import CourseFilter from '../components/CourseFilter';
-import DemoBooking from '../components/DemoBooking';
+import CourseCard from '../../components/CourseCard';
+import CourseFilter from '../../components/CourseFilter';
+import DemoBooking from '../../components/DemoBooking';
 
 const coursesData = [
   {

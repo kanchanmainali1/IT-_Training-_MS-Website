@@ -1,8 +1,8 @@
 // src/pages/Admission.jsx
 import React from 'react';
-import AdmissionProcess from '../components/AdmissionProcess';
-import OnlineRegistration from '../components/OnlineRegistration';
-import PaymentIntegration from '../components/PaymentIntegration';
+import AdmissionProcess from '../../components/AdmissionProcess';
+import OnlineRegistration from '../../components/OnlineRegistration';
+import PaymentIntegration from '../../components/PaymentIntegration';
 
 const Admissions = () => {
   return (

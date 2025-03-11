@@ -1,21 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Homepage from "./pages/Homepage";
-import Courses from "./pages/Courses";
-import CourseDetail from "./pages/CourseDetail";
-import StudentPortal from "./pages/StudentPortal";
-import InstructorPortal from "./pages/InstructorPortal";
-import Admissions from "./pages/Admissions";
-import JobPlacement from "./pages/JobPlacement";
-import LoginSignupPage from "./pages/LoginSignUp";
-import AboutUs from "./pages/AboutUs";
-import Blog from "./pages/Blog";
-import BlogDetail from "./pages/BlogDetails";
-import ContactUs from "./pages/ContactUs";
-import Cart from "./pages/Cart";
-
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Homepage from "./pages/students/Homepage.jsx";
+import Courses from "./pages/students/Courses.jsx";
+import Admissions from "./pages/students/Admissions.jsx";
+import Cart from "./pages/students/Cart.jsx";
+import ContactUs from "./pages/students/ContactUs.jsx"; 
+import JobPlacement from "./pages/students/JobPlacement.jsx";
+import LoginSignupPage from "./pages/students/LoginSignupPage.jsx";
+import AboutUs from "./pages/students/AboutUs.jsx";
+import Blog from "./pages/students/Blog.jsx";
+import BlogDetail from "./pages/students/BlogDetails.jsx";
+import Dashboard from "./pages/instructors/Dashboard.jsx";
+import CourseDetail from "./pages/students/CourseDetail.jsx";
 
 function App() {
   return (
@@ -23,11 +21,9 @@ function App() {
       <Navbar />
       <div className="container mx-auto p-4">
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Homepage/>} />
           <Route path="/courses/:courseId" element={<CourseDetail />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/student-portal" element={<StudentPortal />} />
-          <Route path="/instructor-portal" element={<InstructorPortal />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/contact" element={<ContactUs />} />
@@ -36,6 +32,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} /> 
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/instructor/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
       <Footer />
