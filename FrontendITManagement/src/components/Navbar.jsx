@@ -19,11 +19,11 @@ const Navbar = () => {
             Courses
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/admissions" className="hover:text-gray-300">
             Admissions
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/blog" className="hover:text-gray-300">
             Blog
