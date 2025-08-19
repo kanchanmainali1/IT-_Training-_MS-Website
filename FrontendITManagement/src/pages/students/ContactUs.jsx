@@ -1,4 +1,3 @@
-// src/pages/ContactUs.jsx
 import React, { useState } from "react";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 

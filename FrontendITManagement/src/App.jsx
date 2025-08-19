@@ -8,7 +8,7 @@ import Admissions from "./pages/students/Admissions.jsx";
 import Cart from "./pages/students/Cart.jsx";
 import ContactUs from "./pages/students/ContactUs.jsx"; 
 import JobPlacement from "./pages/students/JobPlacement.jsx";
-import LoginSignupPage from "./pages/students/LoginSignupPage.jsx";
+import LoginSignup from "./pages/students/LoginSignUp.jsx";
 import AboutUs from "./pages/students/AboutUs.jsx";
 import Blog from "./pages/students/Blog.jsx";
 import BlogDetail from "./pages/students/BlogDetails.jsx";
@@ -28,7 +28,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/job-placement" element={<JobPlacement />} />
-          <Route path="/login" element={<LoginSignupPage />} /> 
+          <Route path="/login" element={<LoginSignup />} /> 
           <Route path="/aboutus" element={<AboutUs />} /> 
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
